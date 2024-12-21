@@ -20,8 +20,9 @@
 </p>
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Azure+Databricks+%7C+Delta+Lake+%7C+Key+Vault+;ADLS+Gen2+%7C+SQL+Database+%7C+Power+BI;3+yrs+of+IT+experience+as+Analyst+%40+;Accenture+;Passionate+Data+Engineer+" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Azure+Databricks+%7C+Delta+Lake+%7C+Key+Vault+;ADLS+Gen2+%7C+SQL+Database+%7C+Power+BI;3+yrs+of+Professional+Experience+%7C+Data+Engineer+%40+Accenture;Passionate+Data+Engineer+" alt="Typing SVG" /></a>
 </div>
+
 
 <p align="center">
  <a href="https://www.linkedin.com/in/shubham-dalvi-21603316b" target="_blank">
