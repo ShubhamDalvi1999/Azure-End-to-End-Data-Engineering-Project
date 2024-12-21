@@ -73,9 +73,12 @@ The architecture integrates **Azure Data Lake Storage Gen2**, **Azure Key Vault*
 - [Usage Instructions](#usage-instructions)
 
 ## Technologies Used
-- **Azure Databricks**: For data processing and orchestration.
+- **Azure Blob Storage**: For scalable and secure object storage.
 - **Azure Data Lake Storage Gen2 (ADLS)**: For raw and processed data storage.
+- **Azure Databricks**: For data processing and orchestration.
+- **Databricks Workflows**: For orchestrating and scheduling Databricks jobs.
 - **Delta Lake**: To ensure ACID transactions, schema enforcement, and time travel.
+- **Azure DevOps**: For CI/CD and pipeline automation.
 - **Azure Key Vault**: For secure secrets management.
 - **Azure SQL Database**: For structured data storage.
 - **Power BI**: For data visualization and insights.
@@ -91,7 +94,9 @@ The architecture integrates **Azure Data Lake Storage Gen2**, **Azure Key Vault*
 
 ## Azure Architecture
 
-The architecture follows the modern data lakehouse approach:
+The architecture follows the modern data lakehouse approach, integrating technologies such as Azure Blob Storage, Azure DevOps, and Databricks Workflows alongside the core services:
+
+![Architecture Diagram](https://github.com/user-attachments/assets/f1-architecture-diagram.png)
 
 1. **Bronze Layer** (Raw Data):
    - Data ingestion from multiple sources: CSV, Excel, Parquet, SQL, APIs, and streaming data.
@@ -110,7 +115,14 @@ The architecture follows the modern data lakehouse approach:
    - Power BI dashboards and reports for insights.
 
 ## Data Flow
-1. **Data Ingestion**:
+
+## Orchestration and CI/CD Automation
+- **Azure DevOps**: Enables CI/CD pipelines, ensuring seamless deployment and integration of data workflows.
+- **Databricks Workflows**: Manages job scheduling, task orchestration, and dependency handling within the data pipeline.
+
+### Detailed Data Ingestion Process:
+   - Data is ingested into the Bronze layer using Azure Blob Storage and Azure Databricks.
+   - Databricks Workflows handle automated scheduling and orchestration, ensuring tasks are executed in the correct sequence.
    - Multiple sources ingested into the Bronze layer.
    - Azure Databricks notebooks handle ingestion for APIs, CSVs, and SQL tables.
 
@@ -120,6 +132,7 @@ The architecture follows the modern data lakehouse approach:
 
 3. **Analytics and Reporting**:
    - Data is queried from the Gold layer for creating dashboards and insights using Power BI.
+   - Power BI connects to Azure Databricks and the Gold layer datasets for interactive reporting.
 
 ## Usage Instructions
 1. **Setup Azure Resources**:
